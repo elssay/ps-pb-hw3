@@ -1,9 +1,9 @@
-mylist=[1,2,3]
-for i in range(2,100):
+mylist=[1,1,2,3]
+for i in range(3,100):
     j=i-1
     s=mylist[i]+mylist[j]
     mylist.append(s)
-    if s>10000000:
+    if s>=10000000:
         break
 #print(mylist)
 print('Количество элементов в последовательности:', len(mylist)-1)
