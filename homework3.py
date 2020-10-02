@@ -23,12 +23,14 @@ print(f"логин: {user_n['account']['login']} \n{'пароль'}: {user_n['ac
 
 print(user_list)
 key3 = input('Введите номер пользователя, которого нужно переместить в конец: ')
-user_list_n = user_list
+user_list_n = user_list[:]
 end_user = user_list_n.pop(int(key3))
 print(end_user['name'])
 user_list_n.append(end_user)
-print(user_list_n)
+print('Список до изменения:')
 print(user_list)
+print('Список после изменения:')
+print(user_list_n)
 
 s = 0
 for j in user_list:
