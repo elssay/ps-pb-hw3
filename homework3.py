@@ -21,7 +21,6 @@ user_n = user_list[int(key2)]
 print(f"Данные по юзеру № {key2} \n{'имя'}: {user_n['name']} \n{'возраст'}: {user_n['age']}")
 print(f"логин: {user_n['account']['login']} \n{'пароль'}: {user_n['account']['password']}")
 
-print(user_list)
 key3 = input('Введите номер пользователя, которого нужно переместить в конец: ')
 user_list_n = user_list[:]
 end_user = user_list_n.pop(int(key3))

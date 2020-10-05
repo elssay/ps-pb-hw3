@@ -4,6 +4,7 @@ for i in range(1000, 20001):
         s+=i
 print(s)
     
+    
 count = input('Введите число:')
 if int(count)%3 == 0 and int(count)%5 == 0:
     print('FIZZBUZZ')
